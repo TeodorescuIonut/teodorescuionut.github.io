@@ -614,18 +614,9 @@ body{
 
 
   /* Media Queries */
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .projects-carousel{
-      display: inline;
-    }
-    .projects {
-      width: 800px;
-      height: 800px;
-      margin-bottom: 10px;
-    }
-  }
+  
 
-  @media (min-width: 600px) and (max-width: 992px) {
+  @media (min-width: 900px) and (max-width: 1199px) {
     .projects-carousel{
       display: grid;
     grid-template-columns: auto auto  ;
@@ -639,14 +630,14 @@ body{
     }
   }
 
-  @media (min-width: 200px) and (max-width: 600px) {
+  @media (min-width: 200px) and (max-width: 900px) {
     .projects-carousel{
       display: inline;
   
     }
     .projects {
-      width: 400px;
-      height: 400px;
+      width: 300px;
+      height: 300px;
       margin-bottom: 10px;
     }
   }
