@@ -616,12 +616,12 @@ body{
   /* Media Queries */
   
 
-  @media (min-width: 900px) and (max-width: 1199px) {
+  @media (min-width: 700px) and (max-width: 1199px) {
     .projects-carousel{
       display: grid;
     grid-template-columns: auto auto  ;
     
-    grid-gap: 5px;
+    grid-gap: 10px;
     }
     .projects {
       width: 400px;
@@ -630,7 +630,7 @@ body{
     }
   }
 
-  @media (min-width: 200px) and (max-width: 900px) {
+  @media (max-width: 768px) {
     .projects-carousel{
       display: inline;
   
