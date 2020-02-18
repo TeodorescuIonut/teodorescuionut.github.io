@@ -637,35 +637,41 @@ body{
     }
 
     /* Converter */
-    .converter{
-      background-color: #E5E5E5;
-    }
-    .converter img{
+    .projects img{
       height:auto;
       max-width:100%;
       max-height:100%;
       width:auto;
-    } 
+    }
+    .converter{
+      background-color: #E5E5E5;
+    }
+  
    /* Sonica */
 
    .sonica{
     background-color: #eeeeee;
   }
-  .sonica img{
-    height:auto;
-    max-width:100%;
-    max-height:100%;
-    width:auto;
-  } 
+ 
 
   /* Video Cards */
 
   .video-cards{
     background-color: #eeeeee;
   }
-  .video-cards img{
-    height:auto;
-    max-width:100%;
-    max-height:100%;
-    width:auto;
-  } 
+
+  /* Shoes card */
+  .shoe-card{
+    background-color: #55bac8;
+  }
+ 
+
+  /* Website */
+  .website{
+    background-color: #eeeeee;
+  }
+
+  /* gve-layout */
+  .gve-layout{
+    background-color: #eeeeee;
+  }
