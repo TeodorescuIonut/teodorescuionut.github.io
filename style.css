@@ -580,6 +580,7 @@ body{
       max-height:100%;
       width:auto;
     }
+    
     .converter{
       background-color: #E5E5E5;
     }
@@ -590,9 +591,7 @@ body{
     background-color: #eeeeee;
   }
  
-
   /* Video Cards */
-
   .video-cards{
     background-color: #eeeeee;
   }
