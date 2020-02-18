@@ -580,7 +580,7 @@ body{
       max-height:100%;
       width:auto;
     }
-    
+
     .converter{
       background-color: #E5E5E5;
     }
@@ -610,4 +610,43 @@ body{
   /* gve-layout */
   .gve-layout{
     background-color: #eeeeee;
+  }
+
+
+  /* Media Queries */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .projects-carousel{
+      display: inline;
+    }
+    .projects {
+      width: 800px;
+      height: 800px;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 992px) {
+    .projects-carousel{
+      display: grid;
+    grid-template-columns: auto auto  ;
+    
+    grid-gap: 5px;
+    }
+    .projects {
+      width: 400px;
+      height: 400px;
+      
+    }
+  }
+
+  @media (min-width: 200px) and (max-width: 600px) {
+    .projects-carousel{
+      display: inline;
+  
+    }
+    .projects {
+      width: 400px;
+      height: 400px;
+      margin-bottom: 10px;
+    }
   }
