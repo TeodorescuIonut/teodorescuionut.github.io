@@ -15,6 +15,7 @@ body{
 .navigation{
   margin-bottom: 60px
 }
+
 .primary-menu{
   list-style: none;
   display: inline-flex;
@@ -35,7 +36,9 @@ body{
 .primary-menu>li> a:hover, a:visited{  
   color: darkgrey;
 }
-
+.sections{
+  margin-bottom: 60px;
+}
 
 #avatar{
   width: 170px;
@@ -57,7 +60,6 @@ body{
   border: 1px solid #000000;
   border-radius: 40px;
   padding: 18px 40px;
-  margin-bottom: 100px;
   transition: all ease 0.3s;
 }
 #message:hover{
@@ -75,7 +77,6 @@ body{
 .projects-carousel{
     display: grid;
     grid-template-columns: auto auto auto ;
-    
     grid-gap: 5px;
 }
 .projects{
@@ -86,6 +87,10 @@ body{
   text-align: center;
   overflow: hidden;
   cursor: pointer;
+  transition: 0.2s ease-in-out all;
+}
+.projects:hover{
+  transform: scale(1.01);
 }
 .loading-circle{
   background-color: #f1f1f1;
@@ -640,4 +645,55 @@ body{
       height: 300px;
       margin-bottom: 10px;
     }
+  }
+
+  /********************** Contact Section *******************/
+  .contact{
+    width: 500px;
+  }
+  .contact-title{
+    margin-bottom: 40px;
+  }
+  .contact-form{
+    width: 100%;
+  }
+  .input{
+    height: 62px;
+    padding: 0 20px 0 23px;
+    display: block;
+    width: -webkit-fill-available;
+    background: transparent;
+    font-size: 15px;
+    line-height: 1.2;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+  }
+  #message-textarea{
+    min-height: 199px;
+    padding: 19px 20px 0 23px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-size: 15px;
+    line-height: 1.2;
+    border: none;
+    outline: none;
+    width: -webkit-fill-available;
+  }
+  .wrap-input{
+    border-radius: 40px;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #000000;
+    margin-bottom: 17px;
+  }
+ .message{
+    margin-bottom: 60px;
+  }
+  .arrow-button-2{
+    margin-top: 140px;
+    cursor: pointer;
+    transform: rotate(180deg);
   }

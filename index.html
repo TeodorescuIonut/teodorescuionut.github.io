@@ -25,7 +25,7 @@
         </div><!-- navigation -->
       </header>
 
-      <section id="about_section">
+      <section class="sections" id="about_section">
         <div class="wrapper">
           <img id='avatar' src="https://media-exp1.licdn.com/dms/image/C4D03AQH3u1dev42usg/profile-displayphoto-shrink_200_200/0?e=1586995200&v=beta&t=IJbTLO6p36Tn_IqR7PbmisUEGY9PbqCQ2NSF-9PPFGk"
             alt="">
@@ -48,7 +48,7 @@
         </svg>
 
       </section><!-- about_section -->
-      <section id="projects_section">
+      <section class="sections" id="projects_section">
         <div class="wrapper">
           <div class="projects-carousel">
             <div class="projects loading-circle ">
@@ -162,20 +162,38 @@
 
 
         </div>
+      </section><!-- projects_section -->
+      <section class="sections" id="contact_section">
+        <div class="wrapper contact">
 
-    </div>
+          <form class="contact-form" action="">
+            <h2 class="contact-title">Contact</h2>
+
+            <div class="wrap-input name">
+              <input type="text" id="fname" class="input" name="fname" placeholder="Your Name">
+            </div>
+            <div class="wrap-input email">
+              <input type="text" id="email" class="input" name="email" placeholder="Email">
+            </div>
+            <div class="wrap-input subject">
+              <input type="text" id="subject" class="input" name="subject" placeholder="Subject">
+            </div>
+            <div class="wrap-input message">
+              <textarea name="message" id="message-textarea" cols="30" rows="10" placeholder="Your Message"></textarea>
 
 
-  </div>
-  </section><!-- projects_section -->
+            </div>
+            <a id="message" href="#">Message Me!</a>
+          </form>
+        </div>
+        <svg class="arrow-button-2" width="25" height="25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1" id="Capa_1" x="0px" y="20px" viewBox="0 0 21.825 21.825" style="enable-background:new 0 0 21.825 21.825;"
+          xml:space="preserve">
+          <path style="fill:#1E201D;" d="M16.791,13.254c0.444-0.444,1.143-0.444,1.587,0c0.429,0.444,0.429,1.143,0,1.587l-6.65,6.651  c-0.206,0.206-0.492,0.333-0.809,0.333c-0.317,0-0.603-0.127-0.81-0.333l-6.65-6.651c-0.444-0.444-0.444-1.143,0-1.587  s1.143-0.444,1.587,0l4.746,4.762V1.111C9.791,0.492,10.299,0,10.918,0c0.619,0,1.111,0.492,1.111,1.111v16.904L16.791,13.254z" />
+        </svg>
+      </section><!-- contact_section -->
 
-  <section id="contact_section">
-    <div class="wrapper"></div>
-  </section><!-- contact_section -->
-
-  </div><!-- one-page -->
-
-
+    </div><!-- one-page -->
   </div><!-- container -->
 
   <script src="project.js"></script>
