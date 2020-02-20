@@ -1,0 +1,398 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #0b0b0b;
+  background: linear-gradient(#57dcae 2%, #55b9c9);
+  font-family: arial;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  margin: 0 auto;
+  max-width: 995px;
+  height: auto;
+  display: flex;
+  padding: 10px;
+  background: linear-gradient(#55b9c9 50%, #57dcae);
+  border-radius: 1%;
+}
+
+.left-side {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ebebeb;
+}
+
+.right-side {
+  background-color: #ffffff;
+  width: 50%;
+}
+
+.main {
+  position: relative;
+  padding: 15px 35px;
+  background-color: transparent;
+}
+
+.preview {
+  text-align: center;
+  margin: 60px auto;
+}
+
+.preview a {
+  line-height: 11px;
+  padding: 0px 8px;
+  background-color: #ffffff;
+  border-radius: 10%;
+  margin: 7px;
+  border: 2px solid #e5e1e1;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.2s ease 0s;
+}
+
+.preview .two {
+  background: url("https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/trujxa29jc3wioqmbtdh/alphadunk-basketball-shoe-qh0qTV.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #FFF;
+}
+
+.active {
+  padding: 17px 25px !important;
+}
+
+.pic:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 #0b0b0b82;
+  color: #0b0b0b;
+}
+
+.picture-section {
+  position: relative;
+  text-align: center;
+  display: flow-root;
+  margin-bottom: 112px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  line-height: 11px;
+  padding: 5px 4px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #e5e1e1;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+  color: #9c9c9c;
+  z-index: 1000;
+  transition: all 0.2s ease 0s;
+}
+
+.arrow:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 #0b0b0b82;
+  color: #0b0b0b;
+}
+
+.right {
+  left: 92%;
+}
+
+.img {
+  height: 240px;
+  transition: all 1.5s;
+  cursor: crosshair;
+}
+
+.one {
+  background: url("https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/mkpkxwypxu8ejfxuoveb/alphadunk-basketball-shoe-qh0qTV.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.two {
+  background: url("https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/trujxa29jc3wioqmbtdh/alphadunk-basketball-shoe-qh0qTV.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.three {
+  background: url("https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/dczmdfub07reriyg3mud/alphadunk-basketball-shoe-qh0qTV.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.four {
+  background: url("https://c.static-nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/bhcmbfe6htu4zfehw7k0/alphadunk-basketball-shoe-qh0qTV.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.img:hover {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.details {
+  display: flex;
+}
+
+.brand h4, h2 {
+  margin: 0;
+  color: #9c9c9c;
+}
+
+.brand {
+  flex: 70%;
+}
+
+.brand p {
+  margin: 0;
+}
+
+.social {
+  flex: 30%;
+}
+
+.social a {
+  font-size: 12px;
+  color: #9c9c9c;
+  margin: 0 2px;
+  transition: all 0.2s ease 0s;
+}
+
+.social a:hover {
+  color: #0b0b0b;
+}
+
+.fas {
+  margin: 0 5px;
+}
+
+.power {
+  font-size: 8px;
+  color: #9c9c9c;
+}
+
+.nike {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.text {
+  margin-bottom: 60px;
+}
+
+.price, .payment-details, .dots p {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.header-title {
+  margin: 10px 0;
+  display: inline-flex;
+}
+
+.offer {
+  font-size: 12px;
+  background: linear-gradient(#f24652 25%, #d538b7 100%, #d538b7);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  -webkit-clip-path: circle(44.9% at 50% 50%);
+  /* clip-path: circle(73.9% at -37% 45%); */
+  width: 34px;
+  transform: rotate(-20deg);
+}
+
+.header-title h2 {
+  padding-top: 34px;
+  text-transform: uppercase;
+  color: #0b0b0b;
+  font-weight: 500;
+}
+
+.header-title h2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 35px;
+  background-color: ebebeb;
+  top: 102px;
+}
+
+.header-title a {
+  position: absolute;
+  right: 6%;
+  line-height: 11px;
+  padding: 5px 4px;
+  border-radius: 50%;
+  background-color: ffffff;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+  color: #9c9c9c;
+  transition: all 0.2s ease 0s;
+}
+
+.header-title a:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 #0b0b0b82;
+  color: #0b0b0b;
+}
+
+.text p {
+  font-size: 12px;
+  color: #9c9c9c;
+}
+
+.colors {
+  display: flex;
+}
+
+.price {
+  margin-bottom: 0;
+}
+
+.second {
+  font-size: 7px;
+  -webkit-clip-path: circle(29.9% at 50% 50%);
+  /* clip-path: circle(73.9% at -37% 45%); */
+}
+
+.type {
+  margin-bottom: 0;
+  margin-top: 22px;
+  font-weight: 600;
+}
+
+.list {
+  display: flex;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+.list li {
+  margin-right: 12px;
+  padding: 12px;
+  -webkit-clip-path: circle(29.9% at 50% 50%);
+  /* clip-path: circle(73.9% at -37% 45%); */
+  text-decoration: none;
+}
+
+.black {
+  background-color: black;
+}
+
+.orange {
+  background-color: #e6b22b;
+}
+
+.violet {
+  background-color: #0a377a;
+}
+
+.pink {
+  background-color: #f3977a;
+}
+
+.green {
+  background-color: #01a653;
+}
+
+.read-more {
+  float: right;
+  font-size: 11px;
+  color: #0364ac;
+  font-weight: bolder;
+}
+
+.read-more:hover {
+  color: #014a81;
+}
+
+.payment-details {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.size {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  margin-right: 35px;
+}
+
+.payment-details button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 427px;
+  height: 2px;
+  left: 0px;
+  background-color: ebebeb;
+  bottom: -30px;
+}
+
+.payment-details button {
+  width: 132px;
+  height: 37px;
+  border: none;
+  color: white;
+  border-radius: 3%;
+  margin-left: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.cart {
+  background-color: #f46425;
+  transition: all 0.3s ease 0s;
+}
+
+.cart:hover {
+  background-color: #c9460f;
+}
+
+.payment {
+  background-color: #00adf1;
+  transition: all 0.3s ease 0s;
+}
+
+.payment:hover {
+  background-color: #038cc2;
+}
+
+.feedback {
+  display: flow-root;
+  text-align: right;
+}
+
+.feedback a {
+  margin: 0 30px;
+}
+
+#img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.img-list li {
+  float: left;
+  width: 100%;
+}
