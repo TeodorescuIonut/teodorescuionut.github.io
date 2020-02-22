@@ -35,7 +35,7 @@ body{
   color: #f4d8c6;
 }
 .sections{
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 #avatar{
@@ -49,7 +49,7 @@ body{
   margin-top: 40px;
 }
 .about-info{
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 #message {
   text-decoration: none;
