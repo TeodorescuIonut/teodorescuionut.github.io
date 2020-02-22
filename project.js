@@ -4,19 +4,15 @@
 
 // Project Dots
 const ball =document.getElementById('ball');
-ball.classList.remove('active');
-this.circles = document.querySelectorAll('.circle');
-this.circles.forEach(item => {
-  item.addEventListener('click', event => {
-    var ballPos = ball.offsetLeft-ball.offsetWidth;
-    var x = (event.target.offsetLeft-ballPos)-3+'px';
-    ball.style.transform = "translateX(" + x + ")"; 
-    ball.classList.add('active');
-    event.stopPropagation();
-    console.log(this.event.target)
-    
-  })
-})
+
+function moveBall(event){
+  ball.classList =""
+  var ballPos = ball.offsetLeft-ball.offsetWidth;
+  var x = (event.target.offsetLeft-ballPos)-3+'px';
+  ball.style.transform = "translateX(" + x + ")"; 
+  ball.classList = 'active';
+  
+}
 
 
 

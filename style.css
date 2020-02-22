@@ -32,7 +32,7 @@ body{
   -moz-transition: all ease 0.3s;
 }
 .primary-menu>li> a:hover{  
-  color: #f4d8c6;
+  color: #00c2ff;
 }
 .sections{
   margin-bottom: 100px;
@@ -56,13 +56,13 @@ body{
   color: #000000;
   font-size: 16px;
   text-transform: uppercase;
-  border: 1px solid #f4d8c6;
+  border: 1px solid #c7c7c7;
   border-radius: 40px;
   padding: 12px 40px;
   transition: all ease 0.3s;
 }
 #message:hover{
-  background-color: #f4d8c6;
+  background-color: #00c2ff;
   color: white;
   /* border: 1px solid white; */
 }
@@ -88,9 +88,7 @@ body{
   cursor: pointer;
   transition: 0.2s ease-in-out all;
 }
-.projects:hover{
-  transform: scale(1.01);
-}
+
 .loading-circle{
   background-color: #f1f1f1;
   text-align: center;
@@ -687,7 +685,7 @@ body{
     width: 100%;
     position: relative;
     background-color: #fff;
-    border: 1px solid #f4d8c6;
+    border: 1px solid #e6e6e6;;
     margin-bottom: 17px;
   }
  .message{
@@ -700,11 +698,13 @@ body{
     padding: 5px;
     border-radius: 6px;
     transition: all ease 0.3s;
+    fill: #c7c7c7 ;
   }
   .arrow-button-2:hover{
-    background-color: #f4d8c6;
+  
     padding: 5px;
-    fill: #FFF ;
+    
+    fill: #00c2ff;
   }
   .social-icons{
     font-size: 30px;
@@ -718,11 +718,12 @@ body{
   }
   .social-links {
     transition: all ease 0.3s;
-    color: #f4d8c6;
+    
+    color: #c7c7c7;;
   }
   .social-links:hover{
+    color: #00c2ff;
     
-    color: #000000;
   }
   
 
