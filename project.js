@@ -1,5 +1,36 @@
+const message = document.getElementById('message');
+const contact = document.getElementById('contact');
+const arrow = document.getElementById('Capa_1');
+const projects = document.getElementById('projects');
+function scrollDownView(){
+  var elmnt = document.querySelector(".contact-form");
+  elmnt.scrollIntoView(
+    {
+      behavior:'smooth'
+    }
+  );
+}
+function scrollMiddleView(){
+  var elmnt = document.querySelector(".section-title");
+  elmnt.scrollIntoView(
+    {
+      behavior:'smooth'
+    }
+  );
+}
+function scrollUpView(){
+  var elmnt = document.getElementById("contact");
+  elmnt.scrollIntoView(
+    {
+      behavior:'smooth'
+    }
+  );
+}
 
-
+message.addEventListener('click', scrollDownView);
+contact.addEventListener('click', scrollDownView);
+projects.addEventListener('click', scrollMiddleView);
+arrow.addEventListener('click', scrollUpView);
 
 
 // Project Dots
