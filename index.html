@@ -45,9 +45,12 @@
 
 
       </section><!-- about_section -->
+
       <section class="sections" id="projects_section">
         <div class="wrapper">
-          <div class="projects-carousel">
+          <h4 class="section-title">Animations</h4>
+          <div class="projects-carousel animations">
+
             <div class="projects loading-circle ">
               <div class="box">
                 <svg id="load" x="0px" y="0px" viewBox="0 0 150 150">
@@ -73,17 +76,19 @@
               </div>
             </div><!-- Loading Bars -->
 
-
-
             <div class="projects spinner">
               <div class="box">
                 <svg viewBox="-50 -50 100 100" width="400" height="400">
                   <circle id="circle1" cx="0" cy="0" r="10" stroke="white" stroke-width="2" fill="none" />
                   <circle id="circle2" cx="0" cy="0" r="1" stroke="white" stroke-width="0.1" fill="none" />
                 </svg>
-              </div><!-- Project Spinner -->
+              </div>
 
-            </div>
+            </div><!-- Project Spinner -->
+          </div>
+          <h4 class="section-title">Animations</h4>
+          <div class="projects-carousel">
+
             <div class="projects search">
               <div class="box">
                 <div class="case">
@@ -125,6 +130,9 @@
               </div>
             </div>
             <!-- Project Hamburger-menu -->
+          </div>
+          <h4 class="section-title">Animations</h4>
+          <div class="projects-carousel">
             <div class="projects converter">
               <a class='' href="#">
                 <img src="converter.jpg" alt="">
@@ -151,30 +159,20 @@
                 <img src="website.jpg" alt="">
               </a>
             </div>
-
-
           </div>
+
+
       </section><!-- projects_section -->
       <section class="sections" id="contact_section">
         <div class="wrapper contact">
 
-          <form class="contact-form" action="">
+          <form class="contact-form" action="" autocomplete="off">
             <h2 class="contact-title">Contact</h2>
+            <input type="text" id="fname" class="input" name="fname" placeholder="Your Name">
+            <input type="text" id="email" class="input" name="email" placeholder="Email">
+            <input type="text" id="subject" class="input" name="subject" placeholder="Subject">
+            <textarea name="message" id="message-textarea" class="input" cols="30" rows="10" placeholder="Your Message"></textarea>
 
-            <div class="wrap-input name">
-              <input type="text" id="fname" class="input" name="fname" placeholder="Your Name">
-            </div>
-            <div class="wrap-input email">
-              <input type="text" id="email" class="input" name="email" placeholder="Email">
-            </div>
-            <div class="wrap-input subject">
-              <input type="text" id="subject" class="input" name="subject" placeholder="Subject">
-            </div>
-            <div class="wrap-input message">
-              <textarea name="message" id="message-textarea" class="input" cols="30" rows="10" placeholder="Your Message"></textarea>
-
-
-            </div>
             <a id="message" href="#">Message Me!</a>
 
 

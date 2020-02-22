@@ -64,7 +64,7 @@ body{
 #message:hover{
   background-color: #00c2ff;
   color: white;
-  /* border: 1px solid white; */
+  border: 1px solid #00c2ff;
 }
 .arrow-button{
   margin: 50px;
@@ -649,7 +649,7 @@ body{
 
   /********************** Contact Section *******************/
   .contact{
-    width: 400px;
+    width: 450px;
   }
   .contact-title{
     margin-bottom: 40px;
@@ -667,7 +667,12 @@ body{
     line-height: 1.2;
     border: none;
     outline: none;
-    
+    transition: all ease 0.3s;
+    border-radius: 6px;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;;
+    margin-bottom: 17px;
   }
   #message-textarea{
     min-height: 199px;
@@ -679,14 +684,19 @@ body{
     outline: none;
     width: -webkit-fill-available;
     font-family: 'Poppins', sans-serif;
-  }
-  .wrap-input{
     border-radius: 6px;
-    width: 100%;
+    
     position: relative;
     background-color: #fff;
     border: 1px solid #e6e6e6;;
-    margin-bottom: 17px;
+    margin-bottom: 50px;
+  }
+ 
+  #message-textarea:focus{
+    border: 1px solid #00c2ff;;
+  }
+  .input:focus {
+    border: 1px solid #00c2ff;;
   }
  .message{
     margin-bottom: 60px;
