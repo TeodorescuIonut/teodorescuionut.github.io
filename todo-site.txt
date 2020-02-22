@@ -1,0 +1,8 @@
+ 1 spatiu navigatie-margine
+ 2 font size - reajustare
+ 3 reajustare spatiu poza profil
+ 4 reajustare width text profil
+ 5 modificare size button
+ 6 button message scroll to contact form
+ 7 delimitare proiecte pe categorii
+ 8 contact formul -reduce size border-radius and color

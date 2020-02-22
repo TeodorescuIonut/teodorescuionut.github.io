@@ -1,27 +1,25 @@
 body{
-  
+  margin:0;
   font-family: 'Poppins', sans-serif;
-
 }
 .one-page{
   text-align: center;
-  height: 3240px;
+  
 }
 .wrapper{
   width: fit-content;
   margin: 0 auto;
   background-color: white;
 }
-.navigation{
-  margin-bottom: 60px
+.about{
+  width: 40%;
 }
-
 .primary-menu{
   list-style: none;
   display: inline-flex;
-  margin: 80px 0;
   padding-left: 0 ;
-  font-size: 24px;
+  font-size: 16px;
+  line-height: 48px;
 }
 .primary-menu> li{
   padding: 0 20px;
@@ -33,8 +31,8 @@ body{
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
 }
-.primary-menu>li> a:hover, a:visited{  
-  color: darkgrey;
+.primary-menu>li> a:hover{  
+  color: #f4d8c6;
 }
 .sections{
   margin-bottom: 60px;
@@ -47,7 +45,8 @@ body{
   box-sizing: border-box;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 .about-info{
   margin-bottom: 80px;
@@ -55,15 +54,15 @@ body{
 #message {
   text-decoration: none;
   color: #000000;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
-  border: 1px solid #000000;
+  border: 1px solid #f4d8c6;
   border-radius: 40px;
-  padding: 18px 40px;
+  padding: 12px 40px;
   transition: all ease 0.3s;
 }
 #message:hover{
-  background-color: black;
+  background-color: #f4d8c6;
   color: white;
   /* border: 1px solid white; */
 }
@@ -652,7 +651,7 @@ body{
 
   /********************** Contact Section *******************/
   .contact{
-    width: 500px;
+    width: 400px;
   }
   .contact-title{
     margin-bottom: 40px;
@@ -670,26 +669,25 @@ body{
     line-height: 1.2;
     border: none;
     outline: none;
-    border-radius: 40px;
+    
   }
   #message-textarea{
     min-height: 199px;
     padding: 19px 20px 0 23px;
     display: block;
-    width: 100%;
     background: transparent;
-    font-size: 15px;
     line-height: 1.2;
     border: none;
     outline: none;
     width: -webkit-fill-available;
+    font-family: 'Poppins', sans-serif;
   }
   .wrap-input{
-    border-radius: 40px;
+    border-radius: 6px;
     width: 100%;
     position: relative;
     background-color: #fff;
-    border: 1px solid #000000;
+    border: 1px solid #f4d8c6;
     margin-bottom: 17px;
   }
  .message{
@@ -699,22 +697,31 @@ body{
     margin-top: 140px;
     cursor: pointer;
     transform: rotate(180deg);
+    padding: 5px;
+    border-radius: 6px;
+    transition: all ease 0.3s;
+  }
+  .arrow-button-2:hover{
+    background-color: #f4d8c6;
+    padding: 5px;
+    fill: #FFF ;
   }
   .social-icons{
     font-size: 30px;
-    color: #000000;
     margin-top: 50px;
-    
 }
   .social-icons i{
     display: inline-block;
     vertical-align: middle;
     padding: 0 5px;
+    
   }
-  .social-links{
+  .social-links {
     transition: all ease 0.3s;
+    color: #f4d8c6;
   }
   .social-links:hover{
+    
     color: #000000;
   }
   
