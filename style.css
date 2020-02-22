@@ -737,8 +737,43 @@ body{
   }
   
 
-  /* Nike Shoes */
-  
-  
-  /*# sourceMappingURL=style.css.map */
-  
+  /* animations on projects */
+  .hide{
+    opacity: 0.8;
+    background-color: #00c2ff;
+    height: 20%;
+    transform: translateY(0px);
+    transition: all ease 0.5s;
+    text-align: left;
+    padding: 0px 15px;
+  }
+
+  .projects:hover .hide{
+    transform:translateY(-100%);
+  }
+  .technologies{
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    list-style: none;
+  }
+  .technologies li{
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.75;
+    margin-right: 15px;
+  }
+  .projects{
+    position: relative;
+  }
+  .fa-external-link-alt{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 20px;
+  }
