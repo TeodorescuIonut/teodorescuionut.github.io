@@ -30,6 +30,7 @@ body{
   transition: all ease 0.3s;
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
+  cursor: pointer;
 }
 .primary-menu>li> a:hover{  
   color: #00c2ff;
@@ -60,6 +61,7 @@ body{
   border-radius: 40px;
   padding: 12px 40px;
   transition: all ease 0.3s;
+  cursor: pointer;
 }
 #message:hover{
   background-color: #00c2ff;
@@ -74,7 +76,7 @@ body{
 /******************************** Projects section ******************************************/
 
 .projects-carousel{
-    display: grid;
+    display: inline-grid;
     grid-template-columns: auto auto auto ;
     grid-gap: 5px;
 }
@@ -618,44 +620,14 @@ body{
   }
 
 
-  /* Media Queries */
-  
-
-  @media (min-width: 700px) and (max-width: 1199px) {
-    .projects-carousel{
-      display: grid;
-    grid-template-columns: auto auto  ;
-    
-    grid-gap: 10px;
-    }
-    .projects {
-      width: 400px;
-      height: 400px;
-      
-    }
-  }
-
-  @media (max-width: 768px) {
-    .projects-carousel{
-      display: inline;
-  
-    }
-    .projects {
-      width: 300px;
-      height: 300px;
-      margin-bottom: 10px;
-    }
-  }
 
   /********************** Contact Section *******************/
-  .contact{
-    width: 450px;
-  }
+  
   .contact-title{
     margin-bottom: 40px;
   }
   .contact-form{
-    width: 100%;
+    width: 450px;
   }
   .input{
     height: 62px;
@@ -702,7 +674,7 @@ body{
     margin-bottom: 60px;
   }
   .arrow-button-2{
-    margin-top: 140px;
+    margin-top: 100px;
     cursor: pointer;
     transform: rotate(180deg);
     padding: 5px;
@@ -711,9 +683,7 @@ body{
     fill: #c7c7c7 ;
   }
   .arrow-button-2:hover{
-  
     padding: 5px;
-    
     fill: #00c2ff;
   }
   .social-icons{
@@ -776,4 +746,44 @@ body{
     right: 10px;
     color: #fff;
     font-size: 20px;
+  }
+
+  
+  /* Media Queries */
+  
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .projects-carousel{
+      display: grid;
+    grid-template-columns: auto auto  ;
+    
+    grid-gap: 10px;
+    }
+    
+    .projects {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .projects-carousel{
+      display: inline;
+  
+    }
+    #avatar{
+      width: 150px;
+      height: 150px;
+    }
+    .about {
+    width: 60%;
+}
+    .projects {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 10px;
+    }
+    .contact-form{
+      width: 300px;
+    }
   }
