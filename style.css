@@ -747,8 +747,11 @@ body{
     width: 20px;
     height: 20px;
     z-index: 99999;
+    transition: all ease 0.3s;
   }
-
+  .external:hover{
+    fill: #00c2ff;
+  }
   
   /* Media Queries */
   
