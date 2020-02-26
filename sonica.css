@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+html, body {
+  height: 100%;
+}
+
+html {
+  background: #eee;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.box {
+  width: 366px;
+  height: 523px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px rgba(black, .2);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  transition: width 0.3s; 
+}
+.title{
+  transform:translateY(0px);
+  text-align: center;
+  display: block;
+  height: 44%;
+  padding: 15px;
+  transition: height 0.2s, transform 0.2s;
+}
+.bg-image{
+  overflow: hidden;
+  height: 56%;
+  display: block;
+  opacity: 1;
+  transform:translateY(0px);
+  background-size: cover;
+  transition: height 0.2s, transform 0.2s;
+}
+.box:hover .bg-image{
+    // height: 52%;
+    // background-size: cover;
+    transform:translateY(-10px);
+}
+.box:hover .title{
+  height: 48%;
+  transform:translateY(-10px);
+}
+.box:hover .fas{
+  bottom: 55px;
+}
+.one{
+  background-image: url(http://ibizasonica.com/wp-content/uploads/2019/02/sonica-club-web-textura-glitter.jpg);
+  
+}
+.two{
+  background-image: url(http://ibizasonica.com/wp-content/uploads/2018/12/where-is-the-after-destacada-web-756x604.jpg);
+}
+.three{
+      background-image: url(http://ibizasonica.com/wp-content/uploads/2018/12/sonica-futura-imagen-destacada-756x604.jpg);
+}
+
+.wave {
+  opacity: .8;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  background: #0af;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  margin-top: -250px;
+  transform-origin: 50% 40%;
+  border-radius: 30%;
+  animation: drift 1000ms infinite linear;
+}
+.fas{
+    clear: both;
+    display: inline-block;
+    position:absolute;
+    bottom: -20px;
+    font-size: 10px;
+    opacity: 0.5;
+}
+
+.title-span{
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 1.5em;
+  background-color: #d09c24;
+  color: #fff;
+  padding: 0.1em 0.4em;
+  border-radius: 2px;
+}
+.main-title{
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 22px;
+}
+
+.border{
+  display: inline-block;
+  clear: left;
+  width: 50px;
+  background-color: #d09c24;
+  border-top: 6px solid #d09c24;
+  
+}
+
+
+
+
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(50deg); }
+}
+
+.open>.hide{ 
+    height: 56%;
+    background-color: #FFF;
+    transition: height 5s;
+    cursor: initial;
+}
+.open>.bg-image{
+  height: 0%;
+}
+.open>.title>.fas{
+  display: none;
+  position:absolute;
+    bottom: 0px;
+}
+.open>.title{
+  background-color: #d09c24;
+  display: block;
+  transform:translateY(0px);
+  text-align: left;
+  display: block;
+  height: 44%;
+  color: #fff;
+}
+.open>.title>.border{
+  background-color: #FFF;
+  border-top: 6px solid #FFF;
+}
+.open>.box:hover .title{
+  height: 44%;
+  transform:translateY(0px);
+}

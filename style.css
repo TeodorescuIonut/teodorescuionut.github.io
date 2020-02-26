@@ -611,9 +611,7 @@ body{
   /* Website */
   .website{
     background-color: #eeeeee;
-    overflow: hidden;
-    transition: opacity 800ms cubic-bezier(.4,0,.2,1),transform 800ms cubic-bezier(.4,0,.2,1);
-    will-change: opacity,transform;
+    
   }
 
   /* gve-layout */
@@ -754,6 +752,7 @@ body{
   }
   .external:hover{
     fill: #00c2ff;
+    
   }
   
   /* Media Queries */

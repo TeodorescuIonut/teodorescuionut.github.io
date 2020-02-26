@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>teodorescuionut.com</title>
+  <link rel="stylesheet" href="converter.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="deck">
+      <nav class="nav-conv">
+        <button>Select tool</button>
+        <select name="" id="selectButton" onchange="check(event)">
+          <option value="converter">Size converter</option>
+          <option value="">Percentage of...</option>
+          <option value="audio">Audiobook time calc</option>
+        </select>
+      </nav>
+      <div id="audiobook" class="hidden">
+        <form id="audio-tip-form" autocomplete="off">
+          <span class="audio">Audio file length</span>
+          <input type="text" placeholder="hh" id="hour" maxlength="2" onkeypress="onKeyPress(event)" onclick="onClick(event)"
+            required />
+          <span class="hourMinutes">:</span>
+          <input type="text" placeholder="mm" id="minutes" maxlength="2" onkeypress="onKeyPress(event)" onclick="onClick(event)"
+            required />
+          <span class="minutesSeconds">:</span>
+          <input type="text" placeholder="ss" id="seconds" maxlength="2" onkeypress="onKeyPress(event)" onclick="onClick(event)"
+            required />
+          <span class="rate" id='rate' value=''>Playback rate</span>
+          <input type="number" id="step" value='1.0' placeholder="1.0" readonly>
+          <a href="#" onclick="decrementValue()" class="minus"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24" viewBox="0 0 24 24">
+              <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-12v-2h12v2z" /></svg></a>
+          <input type="submit" value="Calculate" id="convert">
+          <a href="#" onclick="incrementValue()" class="plus"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24">
+              <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" /></svg></a>
+          <span class="result audiobook">Result</span>
+          <input type="text" id="audioResult" value="" disabled>
+          <input type='reset' onclick="reset(event)" value="Reset" id="convert">
+        </form>
+      </div>
+      <div id="converter" class="">
+
+        <form id="tip-form" name='lengthCon'>
+          <input type="text" name="fromValue" class="number" size="5" maxlength="10" required>
+          <select name="fromUnit" id="firstInput">
+            <option>cm</option>
+            <option>m</option>
+            <option> km</option>
+          </select>
+          <svg id="arrows" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+            id="Capa_1" x="0px" y="0px" width="43px" height="24px" viewBox="0 0 560.209 560.209" fill="#2D86CA" style="enable-background:new 0 0 560.209 560.209;"
+            xml:space="preserve" onClick="swapByOptionValue()">
+            <g>
+              <g>
+                <polygon points="141.449,241.854 390.074,241.854 390.074,174.917 141.449,174.917 141.449,124.351 0,206.014 141.449,287.678       " />
+                <polygon points="170.136,385.292 418.762,385.292 418.762,435.858 560.209,354.194 418.762,272.531 418.762,318.354     170.136,318.354   " />
+              </g>
+          </svg>
+          <select name="toUnit" id="secondInput">
+            <option> in</option>
+            <option> ft</option>
+            <option> mi</option>
+          </select>
+          <input type="submit" value="Convert" id="convert">
+          <input type="text" id="toValue" placeholder="" disabled>
+          <span class="result convertervalue">Result</span>
+        </form>
+
+        <ul class="list">
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <script src="converter.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+@import url("@import url('@import url('https://fonts.googleapis.com/css?family=Roboto');");
+
+body {
+  background-color: #e9ebee;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+}
+
+@keyframes slidebottom {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+.container{
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+}
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+}
+.cards {
+  position: relative;
+  border: 0.1px solid #e9ebee;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  cursor: pointer;
+  background: url("https://i.imgur.com/XTj8WCG.jpg") no-repeat;
+  background-size: cover;
+  height: 135px;
+  opacity: .7;
+	filter: grayscale(1);	
+  
+}
+.cards:hover{
+  opacity: 1;
+  transition:300ms ease 100ms;
+  filter: grayscale(0);
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  color: #fff;
+  display: inline-block;
+  margin: 5px 2px;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  background-color: #28a745;
+  text-align: center;
+  padding: 2px 6px;
+}
+.card {
+  margin: 10px;
+  border-radius: 0.25rem;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card:hover{
+  box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, .5);
+}
+.card:hover & .far{
+  display: none;
+}
+@media (min-width: 40rem) {
+  .card-group{
+    width: 50%;
+  }
+  .card {
+    width: 326px;
+  }
+  .cards {
+    height: 184px;
+  }
+}
+@media (min-width: 56rem) {
+  .card-group{
+    width: 71%;
+  }
+  .card {
+    width: 376px;
+  }
+  .cards {
+    height: 212px;
+  }
+}
+@media (min-width: 86rem) {
+  .card-group{
+    width: 90%;
+  }
+  .card {
+    width: 280px;
+  }
+  .cards {
+    height: 156px;
+  }
+}
+
+h3 {
+  color: rgb(87, 99, 102);
+}
+p {
+  color: rgb(123, 139, 142);
+  font-weight: 300;
+  font-style: normal;
+  
+}
+.button {
+  cursor: pointer;
+  background-color: #3659a2;
+  color: #fff;
+  border-style: none;
+  padding: 5px;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  
+}
+.card-text{
+      font-size: 12px;
+    line-height: 1.5;
+}
+
