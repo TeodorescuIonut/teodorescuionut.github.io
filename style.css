@@ -8,6 +8,7 @@ body{
 }
 .wrapper{
   width: fit-content;
+  display: inline-block;
   margin: 0 auto;
   background-color: white;
 }
@@ -633,7 +634,7 @@ body{
     height: 62px;
     padding: 0 20px 0 23px;
     display: block;
-    width: -webkit-fill-available;
+    width: 80%;
     background: transparent;
     font-size: 15px;
     line-height: 1.2;
@@ -645,6 +646,8 @@ body{
     background-color: #fff;
     border: 1px solid #e6e6e6;;
     margin-bottom: 17px;
+    margin-left: auto;
+    margin-right: auto;
   }
   #message-textarea{
     min-height: 199px;
@@ -654,7 +657,7 @@ body{
     line-height: 1.2;
     border: none;
     outline: none;
-    width: -webkit-fill-available;
+    width: 80%;
     font-family: 'Poppins', sans-serif;
     border-radius: 6px;
     
@@ -662,6 +665,8 @@ body{
     background-color: #fff;
     border: 1px solid #e6e6e6;;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
  
   #message-textarea:focus{

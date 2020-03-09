@@ -153,3 +153,6 @@ body {
   height: 44%;
   transform:translateY(0px);
 }
+.fa-times-circle{
+  height: 45px;
+}

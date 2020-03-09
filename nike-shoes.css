@@ -214,8 +214,10 @@ a {
   text-align: center;
   padding: 10px;
   -webkit-clip-path: circle(44.9% at 50% 50%);
-  /* clip-path: circle(73.9% at -37% 45%); */
-  width: 34px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: auto;
   transform: rotate(-20deg);
 }
 
@@ -283,14 +285,16 @@ a {
   display: flex;
   padding-left: 0;
   cursor: pointer;
+  list-style: none;
 }
 
 .list li {
   margin-right: 12px;
-  padding: 12px;
-  -webkit-clip-path: circle(29.9% at 50% 50%);
-  /* clip-path: circle(73.9% at -37% 45%); */
+  width: 20px;
+  height:20px;
   text-decoration: none;
+  border-radius: 50%;
+
 }
 
 .black {
@@ -395,4 +399,13 @@ a {
 .img-list li {
   float: left;
   width: 100%;
+}
+.close{
+  
+}
+.fa-times-circle{
+  
+  top: 5px;
+  font-size: 45px;
+  color: #000;
 }
