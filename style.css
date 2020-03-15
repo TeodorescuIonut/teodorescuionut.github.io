@@ -719,7 +719,7 @@ body{
     height: 20%;
     transform: translateY(0px);
     transition: all ease 0.5s;
-    text-align: left;
+    text-align: center;
     padding: 0px 15px;
   }
 

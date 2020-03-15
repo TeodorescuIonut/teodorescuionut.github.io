@@ -35,14 +35,20 @@ arrow.addEventListener('click', scrollUpView);
 
 // Project Dots
 const ball =document.getElementById('ball');
-
-function moveBall(event){
+function wait(ms=0){
+  return new Promise((resolve)=>{
+    setTimeout(resolve,ms);
+  })
+}
+async function moveBall(event){
+  console.log('start');
+  await wait(100);
   ball.classList =""
   var ballPos = ball.offsetLeft-ball.offsetWidth;
   var x = (event.target.offsetLeft-ballPos)-3+'px';
   ball.style.transform = "translateX(" + x + ")"; 
   ball.classList = 'active';
-  
+  console.log('end');
 }
 
 
